@@ -1,0 +1,107 @@
+@media screen and (min-width: 480px) {
+  .products {
+    background-image: url(../../assets/background-mob.jpg);
+    padding-top: 61px;
+    padding-bottom: 60px;
+  }
+}
+.products {
+  text-align: center;
+}
+.products__label {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.products__title {
+  margin-bottom: 148px;
+  font-family: $font-family-sey;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.product__title {
+  padding-bottom: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.product__description {
+  font-size: 14px;
+  line-height: 176%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  padding-bottom: 109px;
+}
+.product__card {
+  position: relative;
+  margin-bottom: 168px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 24px;
+  padding-top: 123px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 24px;
+  text-align: center;
+}
+.product__image {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  &--green {
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  }
+  &--yellow {
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  }
+  &--brown {
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  }
+}
+.ice-cream {
+  background-color: $light-green;
+}
+.ice-coffee {
+  background-color: $yellow;
+}
+.milkshake {
+  background-color: $brown;
+}
+.image {
+  position: absolute;
+  top: -10px;
+  left: 0%;
+}
