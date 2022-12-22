@@ -1,0 +1,60 @@
+
+.about{
+    color: $white;
+    background-color: $dark-green;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 99px;
+
+    &__label{        
+        font-weight: 800;      
+        font-size: 30px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        padding-top: 60px;
+        margin-bottom: 12px;
+       
+    }
+
+    &__heading{
+        font-family: $font-family-sey;        
+        font-size: 36px;
+        line-height: 45px;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 82px;
+    }
+}
+
+.about-card {
+    display: flex;
+    align-items: center;
+    gap: 110px;
+
+    &__img-wrapper{
+        position: relative;        
+        width: 490px;
+        height: 490px;
+        background-color: $yellow;
+        border-radius: 50%;
+        flex: 1 0 490px;
+    }
+    &__img{
+        position: absolute;
+        left:1px;
+        top: 39px;
+        width: 100%;
+        
+    }
+    &__info{
+        text-align: left;
+        padding-right: calc(127px - 16px); 
+    }
+    &__text{        
+        font-size: 16px;
+        line-height: 176%;
+             
+
+    } 
+}
+
