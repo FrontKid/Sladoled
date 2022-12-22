@@ -1,18 +1,105 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page title</title>
-  <link rel="stylesheet" href="./sass/main.scss" />
-  <script type="module" src="./index.js"></script>
-</head>
+  <body>
+    <div class="wrapper"></div>
 
-<body>
-  <div class="wrapper">
+    <footer class="footer container">
+      <ul class="footercard">
+        <li class="footercard__item">
+          <h3 class="footercard__title">cafe</h3>
+          <address class="footercard__adress">
+            Chicago
+            <a class="footercard__link"
+              href="https://www.google.com.ua/maps/place/10340+Ridgeland+Ave,+Chicago+Ridge,+IL+60415,+%D0%A1%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D1%96+%D0%A8%D1%82%D0%B0%D1%82%D0%B8+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8/@41.7034016,-87.7819292,17z/data=!3m1!4b1!4m5!3m4!1s0x880e39ad302b2c19:0xc808e9b14d04eb2b!8m2!3d41.7034016!4d-87.7797405"
+              >10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a
+            >
+          </address>
+          <ul>
+            <li>Monday - Friday <span>06:00 AM - 10:00 PM</span></li>
+            <li>Saturday - Sunday <span>08:00 AM - 16:00 PM</span></li>
+          </ul>
+          <ul>
+            <li><a href="tel:+610383766284">+61(0) 383 766 284</a></li>
+            <li><a href="mailto:noreply@envato.com">noreply@envato.com</a></li>
+          </ul>
+        </li>
+        <li class="footercard__item">
+          <h3 class="footercard__title">food truck</h3>
+          <address class="footercard__adress">
+            Los Angeles
+            <a class="footercard__link"
+              href="https://www.google.com.ua/maps/place/1003+Manhattan+Ave,+Manhattan+Beach,+CA+90266,+%D0%A1%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D1%96+%D0%A8%D1%82%D0%B0%D1%82%D0%B8+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8/@33.8835263,-118.4125226,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2b3eca6743829:0x98448969b9b4373d!8m2!3d33.8835263!4d-118.4103286"
+              >1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a
+            >
+          </address>
+          <ul>
+            <li>Monday - Friday <span>06:00 AM - 10:00 PM</span></li>
+            <li>Saturday - Sunday <span>08:00 AM - 16:00 PM</span></li>
+          </ul>
+          <ul>
+            <li><a href="tel:+610383766284">+61(0) 383 766 284</a></li>
+            <li><a href="mailto:noreply@envato.com">noreply@envato.com</a></li>
+          </ul>
+        </li>
+        <li class="footercard__item">
+          <h3 class="footercard__title">cafe</h3>
+          <address class="footercard__adress">
+            New York
+            <a class="footercard__link"
+              href="https://www.google.com.ua/maps/place/726+Sterling+Pl,+Brooklyn,+NY+11216,+%D0%A1%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D1%96+%D0%A8%D1%82%D0%B0%D1%82%D0%B8+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8/@40.6726938,-73.956928,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25b9e1735b38f:0xb5fe454b88e9c2c0!8m2!3d40.6726938!4d-73.954734"
+              >726 Sterling Pl, Brooklyn, NY 11222, USA</a
+            >
+          </address>
+          <ul>
+            <li>Monday - Friday <span>06:00 AM - 10:00 PM</span></li>
+            <li>Saturday - Sunday <span>08:00 AM - 16:00 PM</span></li>
+          </ul>
+          <ul>
+            <li><a href="tel:+610383766284">+61(0) 383 766 284</a></li>
+            <li><a href="mailto:noreply@envato.com">noreply@envato.com</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="button-footer">
+        <li class="submit-footer__item">
+          <button type="submit" class="submit-footer__button"><span class="submit-footer__text">Our Locations</span></button>
+          
+        </li>
+        <li class="submit-footer__item">
+          <button type="submit" class="submit-footer__button"><span class="submit-footer__text">Franchise</span></button>
+        </li>
+      </ul>
+      <div class="footer__flex">
+      
+      <div class="footer__information">
+          <h3 class="footer__information--text1">homemade ice cream made </h3>
+          <h2 class="footer__information--text2">with passion</h2>
+      </div>
+      <ul class="footer__social">
+        <li class="footer__social--item"> 
+          <svg width="20px" height="20px">
+          <use href="../assets/symbol-defs.svg#icon-github"></use>
+        </svg>
+        <svg width="20.4px" height="15.87px">
+          <use href="../assets/symbol-defs.svg#icon-telegram"></use>
+        </svg>
+        <svg width="9.35px" height="20.4px">
+          <use href="../assets/symbol-defs.svg#icon-facebook"></use>
+        </svg>
 
-  </div>
-</body>
-
+           </li>
+           <li class="footer__social--contact"> <span class="footer__social--text"></span> Feel free to contact <a  class="footer__social--tel" href="tel:+610383766284">+61 (0) 383 766 284</a></li>
+      </ul>
+    </div>
+    <p class="footer__end">© 2022 - IceCream. All Rights Reserved. </p>
+  </footer>
+  </body>
 </html>

@@ -1,0 +1,10 @@
+// Adaptive sizes
+$mobile-fixed: 320px;
+$mobile-max: 767px;
+$tablet-fixed: 768px;
+$tablet-max: 1199px;
+$desktop-fixed: 1200px;
+
+// @media screen and (min-width: $desktop-fixed) {}
+// @media screen and (min-width: $tablet-fixed) {}
+// @media screen and (min-width: $tablet-fixed) and (max-width: $tablet-max) {}
