@@ -1,7 +1,6 @@
 @mixin link($font-size, $color){
-    font-family: $font-family-mont;
     font-weight: 600;
     font-size: $font-size;
-    line-height: 1.22;
+    line-height: 18px;
     color: $color;
 }
