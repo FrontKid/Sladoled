@@ -73,21 +73,21 @@ background-color: $brown;
 background-image: url(../../assets/Products/product-milkshake.png);
 background-repeat:no-repeat;
 background-size: contain;
-background-position: 0 -10px;
+background-position: 0 -12px;
 }
 .product__card--ice-cream::before{
   background-color: $light-green ;
   background-image: url(../../assets/Products/product-icecream.png);
 background-repeat:no-repeat;
 background-size: contain;
-background-position: 0 -10px;
+background-position: 0 -12px;
 }
 .product__card--ice-coffee::before{
-  background-color: $brown ;
+  background-color: $yellow ;
   background-image: url(../../assets/Products/product-coffee.png);
 background-repeat:no-repeat;
 background-size: contain;
-background-position: 0 -10px;
+background-position: 0 -12px;
 }
 
 @media screen and (min-width: 480px) {
@@ -116,6 +116,10 @@ background-position: 0 -10px;
        margin: 8px;
       flex-basis: calc((100% - 3*16px)/3);
     }}
+    @media screen and (min-width: 768px){
+      .product__card::before{
+        top: -20%;
+      }}
   @media screen and (min-width: 1200px){
     .products{
       background-image: url(../../assets/background.jpg);
@@ -143,4 +147,11 @@ background-position: 0 -10px;
         margin-bottom: 302px;
       }}
 
-     
+     @media screen and (min-width: 1200px){
+      .product__card--ice-coffee::before,
+      .product__card--ice-cream::before,
+      .product__card--milkshake::before{
+        background-position: 0 -16px;
+      }
+     }
+  
