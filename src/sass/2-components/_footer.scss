@@ -1,5 +1,4 @@
 .footer {
-  position: relative;
   min-width: 320px;
   padding-right: 20px;
   padding-left: 20px;
@@ -10,10 +9,7 @@
 }
 
 .footercard {
-  @extend %list;
-  position: absolute;
-  margin-right: auto;
-  margin-left: auto;
+  position: relative;
   transform: translateY(-353px);
 }
 
@@ -27,13 +23,9 @@
   &:nth-last-child(n + 2) {
     margin-bottom: 16px;
   }
-  &:last-child {
-    margin-bottom: 20px;
-  }
 }
 
 .footercard__title {
-  @extend %text;
   display: inline;
   padding: 4px 22px;
   margin-bottom: 20px;
@@ -60,20 +52,16 @@
 }
 
 .footercard__city {
-  @extend %link;
   display: block;
   padding-top: 20px;
   padding-bottom: 8px;
 }
 
 .footercard__link {
-  @extend %link;
   color: $brown;
 }
 
 .schedule {
-  @extend %list;
-
   padding-top: 24px;
   padding-bottom: 24px;
 
@@ -81,7 +69,6 @@
 }
 
 .schedule__days {
-  @extend %list;
   display: flex;
   flex-direction: column;
 
@@ -100,7 +87,6 @@
 }
 
 .footer-contacts {
-  @extend %list;
   padding-top: 24px;
 }
 
@@ -114,16 +100,9 @@
   }
 }
 
-.footer-contacts__link {
-  @extend %link;
-}
-
 .footer-button {
-  @extend %list;
-
-  padding-top: 935px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-top: -333px;
+  text-align: center;
 }
 
 .footer-button__item {
@@ -141,8 +120,6 @@
   color: $white;
 
   &__text1 {
-    @extend %text;
-  
     padding-bottom: 16px;
   
     font-size: 18px;
@@ -150,8 +127,6 @@
   }
 
   &__text2 {
-    @extend %text;
-  
     padding-bottom: 60px;
   
     font-size: 34px;
@@ -162,8 +137,6 @@
 
 
 .footer-social {
-  @extend %list;
-
   display: flex;
   justify-content: flex-end;
 }
@@ -194,12 +167,7 @@
   }
 }
 
-.footer-social__icon {
-  @extend %link;
-}
-
 .footer-social__contact {
-  @extend %text;
   padding-top: 20px;
   padding-bottom: 40px;
   text-align: right;
@@ -210,12 +178,10 @@
 }
 
 .footer-social__tel {
-  @extend %link;
   color: $white;
 }
 
 .footer__end {
-  @extend %text;
   min-width: 320px;
 
   padding-top: 20px;
