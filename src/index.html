@@ -12,9 +12,9 @@
 <body>
   
   <div class="wrapper">
-    <header>
-      <div class="container">
-        <a class="logo" href="./index.html">
+    <header class="page-header">
+      <div class="container header-flex__container">
+        <a class="site-logo" href="./index.html">
           <img src="../assets/logo/logo_m.png" alt="logo">
         </a>
         <nav class="site-nav">
@@ -34,17 +34,11 @@
           </ul>
         </nav>
         <button
-          class="menu-toggle js-open-menu"
+          class="menu-toggle menu-toggle__open js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu">
-          <svg class="menu-button__icon" height="32" width="32">
-          </svg>
         </button>
-        <button class="" type="button">Buy now
-          <svg>
-            <use></use>
-          </svg>
-        </button>
+        <button class="site-button__buy button__buy" type="button">Buy now</button>
       </div>
     </header>
   </div>
@@ -52,9 +46,7 @@
     <a class="mobile-logo" href="./index.html">
       <img src="../assets/logo/logo_m.png" alt="logo">
     </a>
-    <button class="menu-toggle js-close-menu">
-      <svg class="menu-button__icon" height="32" width="32">
-      </svg>
+    <button class="menu-toggle menu-toggle-close js-close-menu">
     </button>
 
     <nav class="mobile-nav">
@@ -73,7 +65,7 @@
         </li>
       </ul>
     </nav>
-    <button class="mobile-button__buy" type="button">Buy now</button>
+    <button class="mobile-button__buy button__buy" type="button">Buy now</button>
   </div>
   <script
       defer

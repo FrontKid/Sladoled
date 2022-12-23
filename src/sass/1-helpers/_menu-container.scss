@@ -32,7 +32,7 @@
    }
 }
 
-.js-close-menu {
+.menu-toggle-close {
    position: absolute;
    top: 16px;
    right: 20px;
@@ -80,23 +80,14 @@
    &:focus {
       color: $black;
    }
+
+   @media screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: calc(59 / 48);
+   }
 }
 
 .mobile-button__buy {
-   font-family: inherit;
-   font-style: normal;
-   font-weight: 600;
-   font-size: 14px;
-   line-height: calc(17 / 14);
-   
-   padding: 12px 36px;
-   text-align: center;
-   border: none;
-   border-radius: 10px;
-
-   color: $full-black;
-   background-color: $yellow;
-
    @media screen and (min-width: 768px) {
       display: none;
    }
