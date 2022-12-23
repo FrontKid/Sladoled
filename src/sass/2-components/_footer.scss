@@ -1,34 +1,234 @@
 .footer {
-    width: 320px;
-    padding-right: 20px;
-    padding-left: 20px;
+  position: relative;
+  min-width: 320px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
 
-    background-color: $dark-green;
+  background-color: $dark-green;
+}
 
-    @media screen and (min-width: $tablet-fixed) {
-        max-width: 768px;
-      }
-      @media screen and (min-width: $desktop-fixed) {
-        max-width: 1200px;
-      }  
-    }
-
-// .footercard {
-    
-// }
+.footercard {
+  @extend %list;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  transform: translateY(-353px);
+}
 
 .footercard__item {
+  padding: 40px 32px 24px 32px;
 
+  background: $white;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
 
-background: $white;
-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-border-radius: 24px;
+  &:nth-last-child(n + 2) {
+    margin-bottom: 16px;
+  }
+  &:last-child {
+    margin-bottom: 20px;
+  }
+}
 
+.footercard__title {
+  @extend %text;
+  display: inline;
+  padding: 4px 22px;
+  margin-bottom: 20px;
 
-&:nth-last-child(n+2) {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  background: $yellow;
+  border-radius: 4px;
+}
+
+.footercard__adress {
+  padding-bottom: 24px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.85;
+  letter-spacing: 0.04em;
+
+  border-bottom: 1px solid $border;
+}
+
+.footercard__city {
+  @extend %link;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 8px;
+}
+
+.footercard__link {
+  @extend %link;
+  color: $brown;
+}
+
+.schedule {
+  @extend %list;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid $border;
+}
+
+.schedule__days {
+  @extend %list;
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: left;
+
+  &:nth-last-child(n + 2) {
+    padding-bottom: 8px;
+  }
+}
+
+.schedule__hours {
+  color: $button-disabled;
+}
+
+.footer-contacts {
+  @extend %list;
+  padding-top: 24px;
+}
+
+.footer-contacts__item {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+
+  &:nth-last-child(n + 2) {
+    padding-bottom: 6px;
+  }
+}
+
+.footer-contacts__link {
+  @extend %link;
+}
+
+.footer-button {
+  @extend %list;
+
+  padding-top: 935px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-button__item {
+  &:nth-last-child(n + 2) {
+    margin-bottom: 16px;
+  }
+}
+
+.footer-information {
+  padding-top: 60px;
+
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+
+  &__text1 {
+    @extend %text;
+  
     padding-bottom: 16px;
+  
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  &__text2 {
+    @extend %text;
+  
+    padding-bottom: 60px;
+  
+    font-size: 34px;
+    line-height: 1.22;
+    letter-spacing: 0.04em;
+  }
 }
-&:last-child {
-    padding-bottom: 20px;
+
+
+.footer-social {
+  @extend %list;
+
+  display: flex;
+  justify-content: flex-end;
 }
+
+.footer-social__item {
+  &:nth-last-child(n + 2) {
+    margin-right: 20px;
+  }
+}
+
+.footer-social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+  background-color: $yellow;
+  fill: $dark-green;
+
+  transition: fill 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $white;
+  }
+}
+
+.footer-social__icon {
+  @extend %link;
+}
+
+.footer-social__contact {
+  @extend %text;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: right;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+}
+
+.footer-social__tel {
+  @extend %link;
+  color: $white;
+}
+
+.footer__end {
+  @extend %text;
+  min-width: 320px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+
+  color: $gray;
+  background-color: $dark-green;
+  border-top: 1px solid $border;
 }
