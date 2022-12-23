@@ -1,97 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/main.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
 
-  <body>
-    <div class="wrapper">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Page title</title>
+   <link rel="stylesheet" href="./sass/main.scss">
+
+</head>
+
+<body>
+   <div class="wrapper">
       <section class="feedback container">
-        <h2 hidden>feedback</h2>
-        <div class="feedback__block-img">
-          <picture>
-            <source
-              srcset="
-                ../assets/feedback/img.jpg,
-                ../assets/feedback/img@2x.jpg 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="
-                ../assets/feedback/img_tablet.jpg    1x,
-                ../assets/feedback/img_tablet@2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ../assets/feedback/img_mobile.jpg    1x,
-                ../assets/feedback/img_mobile@2x.jpg 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img
-              class="feedback__img"
-              src="../assets/feedback/img.jpg"
-              alt=""
-            />
-          </picture>
-        </div>
+         <h2 hidden>feedback</h2>
+         <div class="feedback__block-img">
+            <img src="../assets/feedback/img.jpg" alt="image of ice cream">
+         </div>
 
-        <div class="feedback__slider">
-          <div class="feedback__wrapper">
-            <div class="feedback__item">
-              <picture>
-                <source
-                  srcset="
-                    ../assets/feedback/avatar.jpg,
-                    ../assets/feedback/avatar@2x.jpg 2x
-                  "
-                  media="(min-width: 1200px)"
-                />
-                <source
-                  srcset="
-                    ../assets/feedback/avatar_tablet.jpg    1x,
-                    ../assets/feedback/avatar_tablet@2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ../assets/feedback/avatar_mobile.jpg    1x,
-                    ../assets/feedback/avatar_mobile@2x.jpg 2x
-                  "
-                  media="(max-width: 767px)"
-                />
-                <img
-                  class="feedback__avatar"
-                  src="../assets/feedback/avatar.jpg"
-                  alt=""
-                />
-              </picture>
-
-              <div class="feedback__block-text">
-                <p class="feedback__text">
-                  I love visiting your cafe. You prepare the most delicious ice
-                  cream in Los Angeles! In addition, you have beautiful serving,
-                  cozy atmosphere and polite staff.
-                </p>
-              </div>
-              <p class="feedback__location">Emily, Los Angeles</p>
+         <div class="feedback__slider">
+            <div class="feedback__wrapper">
+               <div class="feedback__item">
+                  <img src="../assets/feedback/avatar.png" alt="photo of the person from the feedback">
+                  <div class="feedback__block-text">
+                     <p class="feedback__text">
+                        I love visiting your cafe. You prepare the most delicious ice
+                        cream in Los Angeles! In addition, you have beautiful serving,
+                        cozy atmosphere and polite staff.
+                     </p>
+                  </div>
+                  <p class="feedback__location">Emily, Los Angeles</p>
+               </div>
             </div>
-          </div>
-          <div class="feedback__switch">
-            <span class="feedback__button"></span>
-            <span class="feedback__button"></span>
-            <span class="feedback__button"></span>
-          </div>
-        </div>
+            <div class="feedback__switch">
+               <span class="feedback__button"></span>
+               <span class="feedback__button"></span>
+               <span class="feedback__button"></span>
+            </div>
+         </div>
       </section>
-    </div>
-  </body>
+   </div>
+
+   <script type="module" src="./index.js"></script>
+</body>
+
 </html>
