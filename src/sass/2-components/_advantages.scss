@@ -58,3 +58,49 @@
     background-image: url(../../assets/advantages-img/icon-ice-cream.png);
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .advantages-list {
+    gap: 80px;
+    justify-content: center;
+    padding: 142px 0 204px 0;
+
+    &__item {
+      flex-basis: 152px;
+    }
+
+    &__value {
+      font-size: 48px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 174%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantages-list {
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    padding-top: 116px;
+    padding-bottom: 64px;
+
+    &__item {
+      flex-basis: 100px;
+      width: 230px;
+
+      &::before {
+        transform: translate(-50%, -66px);
+      }
+    }
+
+    &__value {
+      font-size: 32px;
+      padding-bottom: 12px;
+    }
+    &__text {
+      font-size: 12px;
+    }
+  }
+}
