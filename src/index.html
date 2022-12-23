@@ -13,9 +13,9 @@
   
   <div class="wrapper">
     <header>
-      <div>
+      <div class="container">
         <a class="logo" href="./index.html">
-          <img src="" alt="logo">
+          <img src="../assets/logo/logo_m.png" alt="logo">
         </a>
         <nav class="site-nav">
           <ul class="site-nav__list">
@@ -38,7 +38,6 @@
           aria-expanded="false"
           aria-controls="mobile-menu">
           <svg class="menu-button__icon" height="32" width="32">
-            <use href=""></use>
           </svg>
         </button>
         <button class="" type="button">Buy now
@@ -50,33 +49,31 @@
     </header>
   </div>
   <div class="menu-container js-menu-container" id="mobile-menu">
+    <a class="mobile-logo" href="./index.html">
+      <img src="../assets/logo/logo_m.png" alt="logo">
+    </a>
     <button class="menu-toggle js-close-menu">
       <svg class="menu-button__icon" height="32" width="32">
-        <use href=""></use>
       </svg>
     </button>
 
     <nav class="mobile-nav">
-      <ul class="site-nav__list">
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="">Home</a>
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="">Home</a>
         </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="">How it’s made?</a>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="">How it’s made?</a>
         </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="">Our products</a>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="">Our products</a>
         </li>
-        <li class="site-nav__item">
-           <a class="site-nav__link" href="">Contact</a>
+        <li class="mobile-nav__item">
+           <a class="mobile-nav__link" href="">Contact</a>
         </li>
       </ul>
     </nav>
-    <button class="" type="button">Buy now
-      <svg>
-        <use></use>
-      </svg>
-    </button>
+    <button class="mobile-button__buy" type="button">Buy now</button>
   </div>
   <script
       defer
