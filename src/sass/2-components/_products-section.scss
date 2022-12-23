@@ -67,28 +67,27 @@
   height: 200px;
   border-radius: 50%;
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
-
-&--milkshake{
+}
+.product__card--milkshake::before{
 background-color: $brown;
 background-image: url(../../assets/Products/product-milkshake.png);
 background-repeat:no-repeat;
 background-size: contain;
 background-position: 0 -10px;
 }
-&--ice-cream{
+.product__card--ice-cream::before{
   background-color: $light-green ;
   background-image: url(../../assets/Products/product-icecream.png);
 background-repeat:no-repeat;
 background-size: contain;
 background-position: 0 -10px;
 }
-&--ice-coffee{
+.product__card--ice-coffee::before{
   background-color: $brown ;
   background-image: url(../../assets/Products/product-coffee.png);
 background-repeat:no-repeat;
 background-size: contain;
 background-position: 0 -10px;
-}
 }
 
 @media screen and (min-width: 480px) {
