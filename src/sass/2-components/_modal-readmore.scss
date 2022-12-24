@@ -1,8 +1,9 @@
 .modal-readmore {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(100%);
   width: 568px;
   padding: 32px;
   text-align: center;
@@ -32,6 +33,17 @@
   &__text {
     margin: 0;
   }
+}
+
+.modal-readmore__close {
+  display: block;
+  font-size: 26px;
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  color: $black;
+  cursor: pointer;
+  padding: 5px;
 }
 
 @media screen and (max-width: 1199px) {
