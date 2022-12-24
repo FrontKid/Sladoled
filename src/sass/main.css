@@ -47,11 +47,8 @@ address {
 /*============   COMPONENTS START  ==============/
 /************************************************/
 .footer {
-  min-width: 320px;
   padding-right: 20px;
   padding-left: 20px;
-  margin-right: auto;
-  margin-left: auto;
   background-color: #84a178;
 }
 
@@ -66,9 +63,6 @@ address {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
-.footercard__item:nth-last-child(n+2) {
-  margin-bottom: 16px;
-}
 
 .footercard__title {
   display: inline;
@@ -76,7 +70,7 @@ address {
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.2;
+  line-height: 120%;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   background: #f8d24e;
@@ -87,7 +81,7 @@ address {
   padding-bottom: 24px;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.85;
+  line-height: 186%;
   letter-spacing: 0.04em;
   border-bottom: 1px solid #E1E1E1;
 }
@@ -113,7 +107,7 @@ address {
   flex-direction: column;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.86;
+  line-height: 186%;
   text-align: left;
 }
 .schedule__days:nth-last-child(n+2) {
@@ -131,7 +125,7 @@ address {
 .footer-contacts__item {
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.6;
+  line-height: 160%;
 }
 .footer-contacts__item:nth-last-child(n+2) {
   padding-bottom: 6px;
@@ -217,6 +211,257 @@ address {
   border-top: 1px solid #E1E1E1;
 }
 
+@media screen and (max-width: 767px) {
+  .footercard__item:nth-last-child(n+2) {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  .footercard {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-299px);
+  }
+  .footercard__item {
+    padding: 40px 24px 40px 24px;
+    flex-basis: calc((100% - 32px) / 3);
+  }
+  .footercard__item:nth-last-child(n+2) {
+    margin-right: 16px;
+  }
+  .footercard__title {
+    padding: 4px 13px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .footercard__adress {
+    padding-bottom: 32px;
+    font-size: 14px;
+  }
+  .footercard__city {
+    padding-top: 32px;
+    padding-bottom: 12px;
+  }
+  .schedule {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .schedule__days {
+    font-size: 14px;
+  }
+  .footer-contacts {
+    padding-top: 32px;
+  }
+  .footer-contacts__item {
+    font-size: 14px;
+  }
+  .footer-contacts__item:nth-last-child(n+2) {
+    padding-bottom: 4px;
+  }
+  .footer-button {
+    margin-top: -259px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-button__item:nth-last-child(n+2) {
+    margin-right: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .footercard {
+    transform: translateY(-128px);
+  }
+  .footercard__item {
+    flex-basis: calc((100% - 64px) / 3);
+    padding: 40px;
+  }
+  .footercard__item:nth-last-child(n+2) {
+    margin-right: 32px;
+  }
+  .footercard__title {
+    padding: 4px 14px;
+  }
+  .footercard__adress {
+    font-size: 16px;
+  }
+  .footercard__city {
+    padding-bottom: 8px;
+  }
+  .schedule__days {
+    font-size: 16px;
+  }
+  .schedule__days:nth-last-child(n+2) {
+    padding-bottom: 12px;
+  }
+  .footer-contacts__item {
+    font-size: 16px;
+  }
+  .footer-button {
+    margin-top: -68px;
+  }
+}
+.about {
+  color: #fcfcfc;
+  background-color: #84a178;
+  text-align: center;
+  font-weight: 400;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 99px;
+}
+.about__label {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  padding-top: 60px;
+  margin-bottom: 12px;
+}
+.about__heading {
+  font-family: "Seymour One", sans-serif;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 82px;
+}
+
+.about-card {
+  display: flex;
+  align-items: center;
+  gap: 110px;
+}
+.about-card__img-wrapper {
+  position: relative;
+  width: 490px;
+  height: 490px;
+  background-color: #f8d24e;
+  border-radius: 50%;
+  flex: 1 0 auto;
+}
+.about-card__img {
+  position: absolute;
+  left: 1px;
+  top: 39px;
+  width: 100%;
+  height: 100%;
+}
+.about-card__info {
+  text-align: left;
+  padding-right: 111px;
+}
+.about-card__text {
+  font-size: 14px;
+  line-height: 194%;
+  margin-bottom: 8px;
+  letter-spacing: 0.04em;
+}
+.about-card__text--first {
+  font-size: 16px;
+  line-height: 176%;
+}
+.about-card__read-more {
+  margin-top: 46px;
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    padding-bottom: 86px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .about__label {
+    font-size: 22px;
+  }
+  .about__heading {
+    font-size: 34px;
+    margin-bottom: 72px;
+  }
+  .about-card {
+    gap: 38px;
+    align-items: flex-start;
+  }
+  .about-card__img-wrapper {
+    width: 330px;
+    height: 330px;
+  }
+  .about-card__img {
+    left: 0;
+    top: 26px;
+  }
+  .about-card__info {
+    text-align: left;
+    padding-right: 2px;
+  }
+  .about-card__text {
+    font-size: 12px;
+  }
+  .about-card__text--second {
+    line-height: 176%;
+  }
+  .about-card__read-more {
+    margin-top: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about {
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about__label {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .about__heading {
+    font-size: 30px;
+    margin-bottom: 32px;
+    letter-spacing: 0.04em;
+  }
+  .about-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 62px;
+  }
+  .about-card__img-wrapper {
+    width: 279px;
+    height: 278px;
+  }
+  .about-card__img {
+    left: 1;
+    top: 22px;
+  }
+  .about-card__info {
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .about-card__text {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  .about-card__text--first {
+    margin: 0;
+  }
+  .about-card__text--second {
+    line-height: 162%;
+  }
+  .about-card__text--third {
+    display: none;
+  }
+  .about-card__read-more {
+    margin-top: 2px;
+  }
+}
 /************************************************/
 /*============   COMPONENTS END   =============/
 /************************************************//*# sourceMappingURL=main.css.map */
