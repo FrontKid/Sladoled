@@ -1,6 +1,8 @@
 .footer {
   padding-right: 20px;
   padding-left: 20px;
+  padding-bottom: 12px;
+  
 
   background-color: $dark-green;
 }
@@ -404,6 +406,11 @@
       padding-top: 34px;
       font-size: 14px;
     }
+
+    &__contact,
+    &__tel--link {
+      font-size: 14px;
+    }
   }
 
   .footer__end {
@@ -495,9 +502,20 @@
   .footer-social {
     padding-top: calc(138px - 120px);
 
-    &__contact {
-      padding-top: 40px;
 
+    &__container {
+      display: flex;
+      flex-direction: row;
+      padding-top: 40px;
+    }
+
+    &__contact {
+      padding-right: 4px;
+    }
+
+    &__contact,
+    &__tel--link {
+      padding-top: 0;
       font-size: 16px;
       letter-spacing: 0.02em;
     }
@@ -505,8 +523,6 @@
 
   .footer__end {
     padding-top: 12px;
-    padding-bottom: 12px;
-
     font-size: 12px;
   }
 }
