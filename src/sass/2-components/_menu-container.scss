@@ -16,6 +16,10 @@
       padding: 32px;
       background-color: $green;
    }
+
+   @media screen and (min-width: 1200px) {
+      display: none;
+   }
 }
 
 .menu-container.is-open {
@@ -27,20 +31,40 @@
    top: 12px;
    left: 32px;
    
+   fill: $yellow;
+
    @media screen and (min-width: 768px) {
       top: 20px;
    }
 }
 
-.menu-toggle--close {
-   position: absolute;
-   top: 16px;
-   right: 20px;
+.mobile-icon-logo {
+   width: 40px;
+   height: 37px;
 
    @media screen and (min-width: 768px) {
-      top: 32px;
-      right: 32px;
+      width: 48px;
+      height: 44px;
    }
+}
+
+.menu-toggle {
+	padding: 0;
+	border: none;
+   fill: #ffffff;
+	background-color: transparent;
+	cursor: pointer;
+
+	&.menu-toggle--close {
+		position: absolute;
+      top: 16px;
+      right: 20px;
+
+      @media screen and (min-width: 768px) {
+         top: 32px;
+         right: 32px;
+      }
+	}
 }
 
 .mobile-nav__list {
@@ -88,6 +112,7 @@
 }
 
 .mobile-button__buy {
+   margin: 0 auto;
    @media screen and (min-width: 768px) {
       display: none;
    }
