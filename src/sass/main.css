@@ -8,6 +8,32 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+}
+
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
 body {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
@@ -72,7 +98,6 @@ body {
   margin-bottom: 168px;
   margin-left: 20px;
   margin-right: 20px;
-  padding-bottom: 24px;
   padding-top: 123px;
   padding-left: 40px;
   padding-right: 40px;
@@ -103,33 +128,64 @@ body {
   border-radius: 50%;
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
-.product__card::before--milkshake {
+
+.product__card--milkshake::before {
   background-color: #d6936d;
   background-image: url(../../assets/Products/product-milkshake.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 0 -10px;
+  background-position: 0 -12px;
 }
-.product__card::before--ice-cream {
+
+.product__card--ice-cream::before {
   background-color: #aec6a5;
   background-image: url(../../assets/Products/product-icecream.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 0 -10px;
+  background-position: 0 -12px;
 }
-.product__card::before--ice-coffee {
-  background-color: #d6936d;
+
+.product__card--ice-coffee::before {
+  background-color: #f8d24e;
   background-image: url(../../assets/Products/product-coffee.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 0 -10px;
+  background-position: 0 -12px;
 }
 
+.product__link {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 24px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.products__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .products__flex {
+    flex-wrap: nowrap;
+  }
+}
 @media screen and (min-width: 480px) {
   .products {
     background-image: url(../../assets/background-mob.jpg);
     padding-top: 61px;
     padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .products__card {
+    max-width: 280px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -138,17 +194,14 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .products__flex {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-@media screen and (min-width: 768px) {
   .product__card {
     margin: 8px;
     flex-basis: calc((100% - 48px) / 3);
+  }
+}
+@media screen and (min-width: 768px) {
+  .product__card::before {
+    top: -20%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -167,7 +220,6 @@ body {
     padding-left: 64px;
     padding-right: 64px;
     padding-top: 165px;
-    padding-bottom: 67px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -178,6 +230,57 @@ body {
 @media screen and (min-width: 1200px) {
   .products__title {
     margin-bottom: 302px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product__card--ice-coffee::before,
+.product__card--ice-cream::before,
+.product__card--milkshake::before {
+    background-position: 0 -16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products__title {
+    font-size: 34px;
+    line-height: 43px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products__label {
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .product__description {
+    max-width: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product__description {
+    min-width: 242px;
+    padding-bottom: 126px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__title {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__label,
+.product__title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product__link {
+    bottom: 67px;
   }
 }
 /************************************************/
