@@ -26,7 +26,7 @@
   text-align: center;
   list-style: none;
   margin: 0;
-  padding: 150px 0 178px 0;
+  padding: 80px 0 178px 0;
 
   &__item {
     position: relative;
@@ -60,14 +60,18 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .advantages {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   .advantages-list {
     gap: 80px;
     justify-content: center;
-    padding: 142px 0 204px 0;
-
-    &__item {
-      flex-basis: 152px;
-    }
+    padding-top: 80px;
+    padding-bottom: 204px;
+    padding-left: calc(76px - 32px);
+    padding-right: calc(76px - 32px);
 
     &__value {
       font-size: 48px;
@@ -79,16 +83,21 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .advantages {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .advantages-list {
     flex-direction: column;
     gap: 80px;
     align-items: center;
-    padding-top: 116px;
+    padding-top: 70px;
     padding-bottom: 64px;
+    padding-left: calc(45px - 20px);
+    padding-right: calc(45px - 20px);
 
     &__item {
       flex-basis: 100px;
-      width: 230px;
 
       &::before {
         transform: translate(-50%, -66px);
