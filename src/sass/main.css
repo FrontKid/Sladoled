@@ -28,15 +28,12 @@ body {
 /************************************************/
 /*============   COMPONENTS START  ==============/
 /************************************************/
-.page-header {
-  background-color: #84a178;
-}
-
 .header-flex__container {
   display: flex;
   justify-content: baseline;
   align-items: flex-end;
   padding: 12px 20px 0 20px;
+  background-color: #84a178;
 }
 @media screen and (min-width: 768px) {
   .header-flex__container {

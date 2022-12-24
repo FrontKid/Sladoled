@@ -1,12 +1,10 @@
-.page-header {
-   background-color: $dark-green;
-}
-
 .header-flex__container {
    display: flex;
    justify-content: baseline;
    align-items: flex-end;
    padding: 12px 20px 0 20px;
+
+   background-color: $dark-green;
 
    @media screen and (min-width: 768px) {
       padding: 20px 32px 0 32px;
@@ -110,6 +108,7 @@
 
 .site-button__buy {
    margin-bottom: 5px;
+
    @media screen and (max-width: 767px) {
       display: none;
    }
