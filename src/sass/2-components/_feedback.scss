@@ -1,0 +1,167 @@
+
+.feedback {
+   height: 1037px;
+}
+
+.feedback__item {
+   position: relative;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.feedback__img {
+   position: absolute;
+   top: -32px;
+
+   width: 280px;
+   height: 130px;
+
+   border-radius: 8px;
+}
+
+.feedback__avatar {
+   margin-top: 178px;
+
+   width: 85px;
+   height: 85px;
+}
+
+.feedback-block {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   width: 280px;
+   height: 256px;
+   margin-top: 32px;
+
+   border-radius: 10px;
+   background: #84A178;
+}
+
+.feedback-block__text {
+   width: 202px;
+   height: 186px;
+
+   font-size: 12px;
+   line-height: calc(31/12);
+   letter-spacing: 0.04em;
+   text-align: center;
+   color: #FCFCFC;
+}
+
+.feedback__subtext {
+   margin-top: 32px;
+
+   font-weight: 500;
+   font-size: 20px;
+   line-height: calc(37/20);
+   text-align: center;
+
+   color: #131313;
+}
+
+.feedback__switch {
+   display: flex;
+
+   margin-top: 12px;
+}
+.feedback__button {
+   width: 12px;
+   height: 12px;
+
+   border-radius: 50%;
+   background: #D9D9D9;
+
+   &:not(:last-child) {
+      margin-right: 18px;
+   }
+}
+
+.feedback__button--active {
+   background: #84A178;
+}
+
+@media screen and (min-width: 768px) {
+   .feedback {
+      height: 1017px;
+   }
+
+   .feedback__img {
+      top: -144px;
+   
+      width: 704px;
+      height: 327px;
+
+      border-radius: 18px;
+   }
+
+   .feedback__avatar {
+      margin-top: 283px;
+   
+      width: 84px;
+      height: 84px;
+   }
+
+   .feedback-block {
+      width: 705px;
+      height: 138px;
+   
+      border-radius: 24px;
+   }
+
+   .feedback-block__text {
+      width: 545px;
+      height: 81px;
+   
+      font-size: 14px;
+      line-height: calc(26/14);
+   }
+
+   .feedback__subtext {
+      font-size: 16px;
+      line-height: calc(30/16);
+   }
+
+   .feedback__switch {
+      margin-top: 32px;
+   }
+
+}
+
+@media screen and (min-width: 1200px) {
+   .feedback {
+      height: 1053px;
+   }
+
+   .feedback__img {
+      top: -98px;
+   
+      width: 1013px;
+      height: 422px;
+
+      border-radius: 24px;
+   }
+
+   .feedback__avatar {
+      margin-top: 464px;
+   
+      width: 85px;
+      height: 85px;
+   }
+
+   .feedback-block {
+      width: 968px;
+   }
+
+   .feedback-block__text {
+      width: 750px;
+      height: 52px;
+   
+      font-size: 16px;
+      line-height: calc(30/16);
+   }
+
+}
