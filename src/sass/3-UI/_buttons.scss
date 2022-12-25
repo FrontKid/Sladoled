@@ -1,0 +1,13 @@
+@mixin btn-desktop($color){
+border-radius: 10px;
+font-weight: 600;
+line-height: 18px;
+border: 2px solid $color;
+}
+@mixin btn-mobile ($color){
+border-radius: 8px;
+font-weight: 600;
+line-height: 17px;
+border: 2px solid $color;
+}
+
