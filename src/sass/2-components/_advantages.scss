@@ -90,7 +90,8 @@
   .advantages-list {
     flex-direction: column;
     gap: 80px;
-    align-items: center;
+    margin: 0 auto;
+    max-width: 300px;
     padding-top: 70px;
     padding-bottom: 64px;
     padding-left: calc(45px - 20px);
