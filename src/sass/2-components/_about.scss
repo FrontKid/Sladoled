@@ -29,6 +29,7 @@
 .about-card {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 110px;
 
   &__img-wrapper {
@@ -37,7 +38,7 @@
     height: 490px;
     background-color: $yellow;
     border-radius: 50%;
-    flex: 1 0 auto;
+    flex: 0 0 auto;
   }
   &__img {
     position: absolute;
@@ -67,7 +68,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .about {
     padding-bottom: 86px;
     padding-left: 32px;
@@ -96,6 +97,7 @@
       top: 26px;
     }
     &__info {
+      max-width:  500px;
       text-align: left;
       padding-right: calc(34px - 32px);
     }
@@ -113,8 +115,9 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .about {
+    
     padding-bottom: 50px;
     padding-left: 20px;
     padding-right: 20px;
@@ -122,12 +125,16 @@
     &__label {
       font-weight: 700;
       font-size: 18px;
+      
     }
 
     &__heading {
       font-size: 30px;
       margin-bottom: 32px;
       letter-spacing: 0.04em;
+      max-width:  320px;
+      margin: 12px auto 32px;
+      
     }
   }
 
@@ -145,6 +152,7 @@
       top: 22px;
     }
     &__info {
+      max-width:  320px;
       text-align: center;
       padding-right: calc(50px - 20px);
       padding-left: calc(50px - 20px);
