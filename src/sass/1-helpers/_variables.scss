@@ -31,12 +31,5 @@ $background-images-desk: url("/assets/background.jpg");
 $background-images-tablet: url("/assets/background-tablet.jpg");
 $background-images-mob: url("/assets/background-mob.jpg");
 
-// Adaptive sizes
-$mobile-fixed: 320px;
-$mobile-max: 767px;
-$tablet-fixed: 768px;
-$tablet-max: 1199px;
-$desktop-fixed: 1200px;
-
 //transition
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);

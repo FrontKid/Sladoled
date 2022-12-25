@@ -2,18 +2,20 @@
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 12px;
-  
 
   background-color: $dark-green;
 }
 
 .footercard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
+
   transform: translateY(-353px);
 
   &__item {
     padding: 40px 32px 24px 32px;
-
     background: $white;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
@@ -98,12 +100,30 @@
 
 .footer-button {
   margin-top: -333px;
-  text-align: center;
 
-  &__item {
-    &:nth-last-child(n + 2) {
-      margin-bottom: 16px;
-    }
+  &__submit {
+    // display: flex;
+    // flex-wrap: nowrap;
+    // align-items: center;
+
+    @include btn-mobile($yellow);
+    font-size: 14px;
+    border-radius: 10px;
+    line-height: 129%;
+  }
+
+  &__submit--but1 {
+    padding: 12px 43px 12px 40px;
+    background-color: $yellow;
+  }
+
+  &__submit--but2 {
+    padding: 12px 58px 12px 55px;
+    background-color: inherit;
+  }
+
+  .footer-button__text {
+    margin-right: 7px;
   }
 }
 
@@ -174,9 +194,6 @@
 
   &__tel {
     text-align: right;
-  }
-  &__tel--link {
-
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86;
@@ -202,9 +219,14 @@
 
 @media screen and (max-width: 767px) {
   .footercard__item {
+    max-width: 224px;
     &:nth-last-child(n + 2) {
       margin-bottom: 16px;
     }
+  }
+
+  .footer-button__submit--but1 {
+    margin-bottom: 16px;
   }
 
   .footer-information__text {
@@ -212,86 +234,22 @@
   }
 }
 
-@media screen and (min-width: 321px) and (max-width: 440px) {
-  .footer-information {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
-
-    &__text {
-      text-transform: uppercase;
-      color: $white;
-
-      &--text1 {
-        display: block;
-        padding-bottom: 8px;
-
-        font-size: 14px;
-        line-height: 1.22;
-        letter-spacing: 0.04em;
-      }
-
-      &--text2 {
-        display: block;
-        font-size: 26px;
-        letter-spacing: 0.06em;
-      }
-    }
+@media screen and (min-width: 321px) and (max-width: 767px) {
+  .footercard__item {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
-}
-
-@media screen and (min-width: 440px) and (max-width: 767px) {
-  .footercard__container {
-    width: 321px;
+  .footer-information {
+    max-width: 320px;
     margin-right: auto;
     margin-left: auto;
   }
-  
-  .footer-information {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
 
-    &__text {
-      text-transform: uppercase;
-      color: $white;
-
-      &--text1 {
-        display: block;
-        padding-bottom: 8px;
-
-        font-size: 26px;
-        line-height: 1.22;
-        letter-spacing: 0.04em;
-      }
-
-      &--text2 {
-        display: block;
-        font-size: 48px;
-        letter-spacing: 0.06em;
-      }
-    }
-  }
-
-  .footer-social {
-    padding-top: calc(101px - 40px);
-
-    &__item {
-      &:nth-last-child(n + 2) {
-        margin-right: 30px;
-      }
-    }
-
-    &__contact {
-      padding-top: 34px;
-      font-size: 14px;
-    }
-  }
-
-  .footer-social__container {
-    display: flex;
-    flex-direction: column;
+  .footer-button__submit {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -360,10 +318,8 @@
     display: flex;
     justify-content: center;
 
-    &__item {
-      &:nth-last-child(n + 2) {
-        margin-right: 16px;
-      }
+    &__submit--but1 {
+      margin-right: 16px;
     }
   }
 
@@ -408,7 +364,7 @@
     }
 
     &__contact,
-    &__tel--link {
+    &__tel {
       font-size: 14px;
     }
   }
@@ -502,7 +458,6 @@
   .footer-social {
     padding-top: calc(138px - 120px);
 
-
     &__container {
       display: flex;
       flex-direction: row;
@@ -514,7 +469,7 @@
     }
 
     &__contact,
-    &__tel--link {
+    &__tel {
       padding-top: 0;
       font-size: 16px;
       letter-spacing: 0.02em;
