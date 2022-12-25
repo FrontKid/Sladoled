@@ -65,6 +65,7 @@
 
   &__read-more {
     margin-top: calc(54px - 8px);
+    @include btn-desktop($yellow);
   }
 }
 
