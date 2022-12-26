@@ -52,7 +52,10 @@ line-height: 140%;
   }
 
   .modal__forms {
-padding: 24px 0px;
+    display: flex;
+    flex-direction: column;
+padding: 24px 0;
+text-align: center;
   }
 
   .modal__input {
@@ -61,23 +64,28 @@ padding: 24px 0px;
 
   .modal__input,
   .modal__textarea {
-    padding: 8px 12px;
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid $dark-green;
-    border-radius: 10px;
-
-    font-size: 12px;
-    line-height: 140%;
+    @extend %input-mobile;
   }
 
   .modal__textarea {
     resize: none;
   }
 
+  .modal__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @include btn-mobile($yellow);
+    padding: 12px 34px;
+    background-color: $yellow;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
   .modal__close {
     position: absolute;
-    top: 17.33px;
-    right: 17.33px;
+    top: 12px;
+    right: 12px;
     border: none;
     background-color: $white;
   }
@@ -113,9 +121,18 @@ line-height: 1.4;
 
   .modal__input,
   .modal__textarea {
-    padding: 11px 16px;
-   font-size: 14px;
+    padding: 11px 152px 11px 16px;
+    font-size: 14px;
   }
 
+  .modal__button {
+    padding: 12px 24px;
+    font-size: 14px;
+line-height: 17px;
+  }
 
+  .modal__close {
+    width: 24px;
+    height: 24px;
+  }
 }

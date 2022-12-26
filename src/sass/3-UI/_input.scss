@@ -1,0 +1,19 @@
+%input-mobile {
+    padding: 8px 48px 8px 12px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid $dark-green;
+    border-radius: 10px;
+
+    font-size: 12px;
+    line-height: 140%;
+}
+
+%input-desktop {
+    padding: 11px 152px 11px 16px;
+
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid $dark-green;
+    border-radius: 10px;
+   font-size: 14px;
+   line-height: 140%;
+}
