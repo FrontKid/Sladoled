@@ -8,7 +8,7 @@
    background-color: $dark-green;
    z-index: 999;
    text-align: center;
-   display: flex;
+   display: none;
    flex-direction: column;
    justify-content: space-around;
 
@@ -17,6 +17,7 @@
 }
 
 .menu-container.is-open {
+   display: flex;
    transform: translateY(0);
 }
 
