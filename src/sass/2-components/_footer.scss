@@ -151,7 +151,9 @@
     }
   }
 }
-
+.footer-button__submit {
+  cursor: pointer;
+}
 .footer-social {
   display: flex;
   justify-content: flex-end;
