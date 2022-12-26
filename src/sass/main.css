@@ -40,7 +40,6 @@ body {
   margin-bottom: 32px;
   color: #fcfcfc;
   font-family: "Seymour One", sans-serif;
-  font-weight: 400;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.04em;
@@ -68,12 +67,26 @@ body {
   border: 2px solid #f8d24e;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 8px;
+  cursor: pointer;
+}
+.hero__link-products:hover {
+  border: 2px solid #0a8817;
 }
 .hero__link-about {
   color: #f8d24e;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.2;
+  cursor: pointer;
+}
+.hero__link-about:hover {
+  color: #0a8817;
+}
+.hero__link-about:focus {
+  color: #fcfcfc;
+}
+.hero__link-about:disabled {
+  color: #ababab;
 }
 .hero__advantages {
   display: none;
@@ -97,6 +110,7 @@ body {
 }
 .hero__advantages-span {
   display: inline-block;
+  font-weight: 400;
   margin-top: 4px;
   color: #fcfcfc;
   font-size: 8px;
@@ -114,13 +128,13 @@ body {
 .hero__text-wrapper {
   display: none;
 }
-.hero .hero__arrow {
-  display: none;
+.hero__arrow-link {
+  width: 40px;
+  cursor: pointer;
 }
-@media screen and (min-width: 768px) {
-  .hero .hero__arrow {
-    display: block;
-  }
+.hero__arrow {
+  display: none;
+  fill: #fcfcfc;
 }
 .hero__iceCream-wrapper {
   position: relative;
@@ -189,7 +203,7 @@ body {
     font-size: 12px;
     line-height: 1.4;
   }
-  .hero .hero__arrow {
+  .hero__arrow {
     display: block;
   }
   .hero__iceCream-wrapper {
@@ -230,6 +244,13 @@ body {
   .hero__link-products {
     padding: 12px 34px;
     font-size: 14px;
+  }
+  .hero__link-products:focus {
+    border: 2px solid #0a8817;
+    color: #fcfcfc;
+  }
+  .hero__link-products:disabled {
+    border: 2px solid #ababab;
   }
   .hero__link-about {
     font-size: 14px;
