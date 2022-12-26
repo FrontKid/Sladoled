@@ -1,0 +1,116 @@
+@mixin icons-before {
+  position: absolute;
+  transform: translate(-50%, -80px);
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: $yellow;
+  border-radius: 50%;
+}
+
+.advantages {
+  background-color: $dark-green;
+  color: $white;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  &__heading {
+    font-size: 0px;
+    height: 0px;
+  }
+}
+
+.advantages-list {
+  display: flex;
+  gap: 32px;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 80px 0 178px 0;
+
+  &__item {
+    position: relative;
+  }
+
+  &__value {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 1.2;
+    margin: 0;
+    padding-bottom: 12px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 176%;
+    margin: 0;
+  }
+
+  &__item--cow::before {
+    @include icons-before;
+    background-image: url(../../assets/advantages-img/icon-cow.png);
+  }
+  &__item--weight::before {
+    @include icons-before;
+    background-image: url(../../assets/advantages-img/icon-weigth.png);
+  }
+  &__item--ice-cream::before {
+    @include icons-before;
+    background-image: url(../../assets/advantages-img/icon-ice-cream.png);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .advantages {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .advantages-list {
+    gap: 80px;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 204px;
+    padding-left: calc(76px - 32px);
+    padding-right: calc(76px - 32px);
+
+    &__value {
+      font-size: 48px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 174%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantages {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .advantages-list {
+    flex-direction: column;
+    gap: 80px;
+    margin: 0 auto;
+    max-width: 300px;
+    padding-top: 70px;
+    padding-bottom: 64px;
+    padding-left: calc(45px - 20px);
+    padding-right: calc(45px - 20px);
+
+    &__item {
+      flex-basis: 100px;
+
+      &::before {
+        transform: translate(-50%, -66px);
+      }
+    }
+
+    &__value {
+      font-size: 32px;
+      padding-bottom: 12px;
+    }
+    &__text {
+      font-size: 12px;
+    }
+  }
+}

@@ -3,7 +3,29 @@
 * {
   box-sizing: border-box;
 }
+ul {
+  list-style-type: none;
+}
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
 body {
   font-size: $general-font-size;
   font-family: $font-family-mont;
@@ -15,5 +37,24 @@ body {
 
 .container {
   max-width: 1168px;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
+
+p, h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a, 
+address {
+  text-decoration: none;
+  font-style: normal;
+  color: $black;
+}
+

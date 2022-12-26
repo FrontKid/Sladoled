@@ -1,0 +1,6 @@
+@mixin link($font-size, $color){
+    font-weight: 600;
+    font-size: $font-size;
+    line-height: 18px;
+    color: $color;
+}
