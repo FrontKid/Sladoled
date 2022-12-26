@@ -31,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
+  margin: 0;
 }
 
 body {
@@ -48,21 +48,6 @@ body {
   margin: 0 auto;
 }
 
-p,
-h1,
-h2,
-h3 {
-  padding: 0;
-  margin: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a,
 address {
   text-decoration: none;
   font-style: normal;
@@ -446,6 +431,282 @@ address {
   .footer__end {
     padding-top: 12px;
     font-size: 12px;
+  }
+  .hero {
+    background-color: #84a178;
+  }
+  .hero__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .hero__title {
+    margin: 0;
+    margin-bottom: 32px;
+    color: #fcfcfc;
+    font-family: "Seymour One", sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .hero__title--bold {
+    font-size: 34px;
+    line-height: 0;
+  }
+  .hero__link-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 19px;
+  }
+  .hero__link-products {
+    display: inline-block;
+    margin-right: 14px;
+    padding: 11px 26px;
+    color: #131313;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    text-decoration: none;
+    border: 1px solid;
+    border: 2px solid #f8d24e;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .hero__link-products:hover {
+    border: 2px solid #0a8817;
+  }
+  .hero__link-about {
+    color: #f8d24e;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    cursor: pointer;
+  }
+  .hero__link-about:hover {
+    color: #0a8817;
+  }
+  .hero__link-about:focus {
+    color: #fcfcfc;
+  }
+  .hero__link-about:disabled {
+    color: #ababab;
+  }
+  .hero__advantages {
+    display: none;
+  }
+  .hero__advantages-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    margin-top: 14px;
+    margin-bottom: 20px;
+    width: 46px;
+    color: #131313;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+  }
+  .hero__advantages-text:last-child {
+    margin: 0;
+  }
+  .hero__advantages-span {
+    display: inline-block;
+    font-weight: 400;
+    margin-top: 4px;
+    color: #fcfcfc;
+    font-size: 8px;
+    line-height: 1.2;
+    letter-spacing: 0;
+  }
+  .hero__image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .hero__image-iceCreamPlate {
+    display: none;
+  }
+  .hero__text-wrapper {
+    display: none;
+  }
+  .hero__arrow-link {
+    width: 40px;
+    cursor: pointer;
+  }
+  .hero__arrow {
+    display: none;
+    fill: #fcfcfc;
+  }
+  .hero__iceCream-wrapper {
+    position: relative;
+    width: 177px;
+    height: 217px;
+  }
+  .hero__image-iceCream {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    z-index: 2;
+  }
+  .hero__dots-wrapper {
+    position: relative;
+  }
+  .hero__dots-mobile {
+    position: absolute;
+    bottom: -217px;
+    left: -65px;
+  }
+  .hero__dots-tablet {
+    display: none;
+  }
+  .hero__dots-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    margin-bottom: 24px;
+    margin-right: 411px;
+  }
+  .hero__link-group {
+    margin-bottom: 39px;
+  }
+  .hero__advantages {
+    display: block;
+  }
+  .hero__image-wrapper {
+    align-items: flex-end;
+  }
+  .hero__iceCreamPlate-wrapper {
+    position: relative;
+    width: 152px;
+    height: 100px;
+    margin-right: 32px;
+  }
+  .hero__image-iceCreamPlate {
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    width: 100%;
+  }
+  .hero__text-wrapper {
+    display: inline-block;
+    margin-right: 53px;
+    margin-bottom: 24px;
+  }
+  .hero__text {
+    margin: 0;
+    margin-bottom: 12px;
+    width: 139px;
+    height: 85px;
+    color: #fcfcfc;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  .hero__arrow {
+    display: block;
+  }
+  .hero__iceCream-wrapper {
+    width: 268px;
+    height: 100px;
+  }
+  .hero__image-iceCream {
+    right: 30px;
+    width: 268px;
+    height: 329px;
+  }
+  .hero__dots-wrapper {
+    position: relative;
+  }
+  .hero__dots-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .hero__dots-tablet {
+    position: absolute;
+    bottom: -100px;
+    left: -64px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    margin-bottom: 28px;
+    margin-right: 722px;
+    font-size: 38px;
+    line-height: 1.2;
+  }
+  .hero__link-group {
+    margin-bottom: 109px;
+  }
+  .hero__link-products {
+    padding: 12px 34px;
+    font-size: 14px;
+  }
+  .hero__link-products:focus {
+    border: 2px solid #0a8817;
+    color: #fcfcfc;
+  }
+  .hero__link-products:disabled {
+    border: 2px solid #ababab;
+  }
+  .hero__link-about {
+    font-size: 14px;
+  }
+  .hero__advantages-text {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    width: 79px;
+    font-size: 46px;
+    line-height: 1.2;
+  }
+  .hero__advantages-span {
+    font-size: 14px;
+  }
+  .hero__image-wrapper {
+    justify-content: left;
+  }
+  .hero__iceCreamPlate-wrapper {
+    width: 225px;
+    height: 100px;
+    margin-right: 16px;
+  }
+  .hero__image-iceCreamPlate {
+    bottom: 50px;
+    left: 0px;
+    width: 100%;
+  }
+  .hero__text-wrapper {
+    margin-right: 195px;
+    margin-bottom: 103px;
+  }
+  .hero__text {
+    margin-bottom: 24px;
+    font-size: 14px;
+    width: 200px;
+    height: 80px;
+  }
+  .hero__iceCream-wrapper {
+    width: 456px;
+    height: 100px;
+  }
+  .hero__image-iceCream {
+    right: 10px;
+    width: 456px;
+    height: 560px;
+  }
+  .hero__dots-desktop {
+    display: block;
+    position: absolute;
+    bottom: -100px;
+    left: -16px;
   }
 }
 .about {
@@ -1195,3 +1456,6 @@ address {
 /************************************************/
 /*============   COMPONENTS END   =============/
 /************************************************/
+/************************************************/
+/*============   COMPONENTS START   =============/
+/************************************************/ /*# sourceMappingURL=main.css.map */
