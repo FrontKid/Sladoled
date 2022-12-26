@@ -105,6 +105,14 @@
   padding-left: 24px;
   padding-right: 24px;
 }
+.product__button{
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color:transparent;
+  cursor: pointer;
+}
+
 @media screen and(min-width: 768px) {
   .products__flex {
     flex-wrap: nowrap;

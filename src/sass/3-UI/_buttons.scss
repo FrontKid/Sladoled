@@ -1,13 +1,17 @@
 @mixin btn-desktop($color) {
+padding: 12px 36px;
 border-radius: 10px;
 font-weight: 600;
 line-height: 18px;
-border: 2px solid $color;
+background-color: $color;
 }
 @mixin btn-mobile($color) {
+padding: 11px 26px;
 border-radius: 8px;
 font-weight: 600;
 line-height: 17px;
-border: 2px solid $color;
+background-color: $color;
 }
-
+@mixin btn-border($px, $color){
+    border: $px solid $color
+}
