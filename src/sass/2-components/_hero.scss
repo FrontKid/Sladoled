@@ -145,6 +145,7 @@
 
     &__dots-wrapper {
     position: relative;
+    pointer-events: none;
     }
 
     &__dots-mobile {
