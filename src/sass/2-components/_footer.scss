@@ -102,10 +102,6 @@
   margin-top: -333px;
 
   &__submit {
-    // display: flex;
-    // flex-wrap: nowrap;
-    // align-items: center;
-
     @include btn-mobile($yellow);
     font-size: 14px;
     border-radius: 10px;
@@ -423,7 +419,7 @@
     font-size: 16px;
   }
 
-  .footer-button {
+  .footer .footer-button {
     margin-top: -68px;
   }
 
