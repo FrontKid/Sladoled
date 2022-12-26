@@ -1,6 +1,7 @@
 .products {
   text-align: center;
-} 
+  padding-top: 50px;
+}
 .products__label {
   font-weight: 800;
   font-size: 18px;
@@ -62,7 +63,7 @@
   right: 0;
   margin-right: auto;
   margin-left: auto;
-  content: '';
+  content: "";
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -117,8 +118,8 @@
     padding-bottom: 60px;
   }
 }
-@media screen and (max-width: 768px){
-  .products__card{
+@media screen and (max-width: 768px) {
+  .products__card {
     max-width: 280px;
   }
 }
