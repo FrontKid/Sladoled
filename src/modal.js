@@ -8,8 +8,9 @@ const objModal = {
 };
 
 document.addEventListener('click', e => {
+
   if (e.target.matches('[data-open-modal]')) {
-    currentModal = e.target.classList.value;    
+    currentModal = e.target.classList.value;
     document.querySelector(`${objModal[currentModal]}`).style.display = 'block';
     modalBackdrop.classList.remove('is-hidden');
   }
