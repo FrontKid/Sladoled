@@ -16,15 +16,29 @@
   }
 
   .modal__button {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 24px;
     @include btn-mobile($yellow);
+    @include btn-border(2px, $yellow);
     padding: 12px 34px;
-    background-color: $yellow;
     font-size: 12px;
     line-height: 15px;
+    transition: background-color 250ms $timing-function, border 250ms $timing-function, color 250ms $timing-function;
+
+     &:hover {
+        background-color: $button-hover;
+        @include btn-border(2px, $button-hover);
+     }
+     &:focus {
+        background-color: $button-hover;
+        @include btn-border(2px, $button-hover);
+        color: $white;
+     }
+     &:disabled {
+        background-color: $button-disabled;
+        @include btn-border(2px, $button-disabled);
+     }
   }
 
   .modal__close {

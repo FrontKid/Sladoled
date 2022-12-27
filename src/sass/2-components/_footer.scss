@@ -102,27 +102,52 @@
   margin-top: -333px;
 
   &__submit {
-
-    @include btn-mobile($yellow);
     font-size: 14px;
-    border-radius: 10px;
     line-height: 129%;
+    @include btn-border(2px, $yellow);
+    transition: background-color 250ms $timing-function, border 250ms $timing-function, color 250ms $timing-function;
   }
 
   &__submit--but1 {
+    @include btn-mobile($yellow);
     padding: 12px 43px 12px 40px;
-    background-color: $yellow;
-  }
-
+ 
+  &:hover {
+    background-color: $button-hover;
+    @include btn-border(2px, $button-hover);
+ }
+ &:focus {
+    background-color: $button-hover;
+    @include btn-border(2px, $button-hover);
+    color: $white;
+ }
+ &:disabled {
+    background-color: $button-disabled;
+    @include btn-border(2px, $button-disabled);
+ } 
+}
+  
   &__submit--but2 {
+    @include btn-mobile($dark-green);
     padding: 12px 58px 12px 55px;
-    background-color: inherit;
+    
+   
+    &:hover {
+      @include btn-border(2px, $button-hover);
+   }
+   &:focus {
+      @include btn-border(2px, $button-hover);
+      color: $white;
+   }
+   &:disabled {
+      @include btn-border(2px, $button-disabled);
+   } 
   }
+}
 
   .footer-button__text {
     margin-right: 7px;
   }
-}
 
 .footer-information {
   padding-top: 60px;
@@ -148,9 +173,7 @@
     }
   }
 }
-.footer-button__submit {
-  cursor: pointer;
-}
+
 .footer-social {
   display: flex;
   justify-content: flex-end;
@@ -319,9 +342,8 @@
 
     &__submit--but1 {
       margin-right: 16px;
-    }
   }
-
+  }
   .footer-information {
     display: flex;
     justify-content: space-between;
