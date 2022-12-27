@@ -1,27 +1,25 @@
-const modalReadMoreClose = document.querySelector('.modal-readmore__close');
-const modalReadMoreOpen = document.querySelector('.about-card__read-more');
-const modalReadMore = document.querySelector('.modal-readmore');
 const modalBackdrop = document.querySelector('.is-hidden');
-modalReadMore.addEventListener('click', e => e.stopPropagation());
+let currentModal = '';
 
-const closeBtn = () => {
-  modalReadMore.style.display = 'none';
-  modalBackdrop.classList.add('is-hidden');
+const objModal = {
+  'about-card__read-more': '.modal-readmore',
+  'site-button__buy': '.modal-buy-now',
+  '.product__button': '.modal',
 };
 
-modalReadMoreOpen.addEventListener('click', () => {
-  modalReadMore.style.display = 'block';
-  modalBackdrop.classList.remove('is-hidden');
-});
-
-modalReadMoreClose.addEventListener('click', () => {
-  console.log(222);
-  closeBtn();
-});
-
 document.addEventListener('click', e => {
-  if (e.target.matches('.backdrop')) {
-    console.log(111);
-    closeBtn();
+
+  if (e.target.matches('[data-open-modal]')) {
+    currentModal = e.target.classList.value;
+    document.querySelector(`${objModal[currentModal]}`).style.display = 'block';
+    modalBackdrop.classList.remove('is-hidden');
+  }
+
+  if (
+    e.target.matches('.backdrop') ||
+    e.target.classList.value.includes('close')
+  ) {
+    modalBackdrop.classList.add('is-hidden');
+    document.querySelector(`${objModal[currentModal]}`).style.display = 'none';
   }
 });
