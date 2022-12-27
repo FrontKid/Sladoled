@@ -1,5 +1,5 @@
 .modal-location {
-    @extend %modal-window;
+    @include modal-window;
   
     min-width: 280px;
     min-height: 365px;
