@@ -1,9 +1,5 @@
 .modal {
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    background: $white;
+  @include modal-window;
     border: 2px solid $yellow;
     border-radius: 10px;
   }
@@ -36,7 +32,6 @@
     background-size: contain;
     background-position: 0 -12px;
   }
-}
 
 .button__close-modal {
   position: absolute;
@@ -208,3 +203,4 @@ form {
  line-height: 140%;
     }
     }
+  }
