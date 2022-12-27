@@ -52,6 +52,12 @@ address {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .modal__input,
 .modal__textarea {
   padding: 8px 48px 8px 12px;
@@ -60,6 +66,26 @@ address {
   border-radius: 10px;
   font-size: 12px;
   line-height: 140%;
+}
+
+.modal-location, .modal-contacts {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 28px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #fcfcfc;
+  border: 2px solid yellow;
+  border-radius: 10px;
+}
+
+.modal-location__title {
+  padding-bottom: 20px;
+  font-family: "Seymour One";
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 /************************************************/
@@ -1629,17 +1655,8 @@ address {
   }
 }
 .modal-contacts {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   min-width: 280px;
   min-height: 674px;
-  padding: 28px;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #fcfcfc;
-  border: 2px solid yellow;
-  border-radius: 10px;
 }
 
 .modal__title {
@@ -1718,6 +1735,61 @@ address {
 .modal__textarea {
     padding: 11px 152px 11px 16px;
     font-size: 14px;
+  }
+  .modal__button {
+    padding: 12px 24px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .modal__close {
+    width: 24px;
+    height: 24px;
+  }
+}
+.modal-location {
+  min-width: 280px;
+  min-height: 365px;
+}
+
+.modal-location__img {
+  max-width: 448px;
+  min-width: 224px;
+  margin: 0 auto;
+}
+
+.modal__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  line-height: 17px;
+  border: 2px solid #f8d24e;
+  padding: 12px 34px;
+  background-color: #f8d24e;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background-color: #fcfcfc;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-localion {
+    width: 568px;
+    height: 458px;
+    padding: 32px 60px;
+  }
+  .modal__title {
+    padding-bottom: 24px;
+    font-size: 20px;
+    line-height: 1.4;
   }
   .modal__button {
     padding: 12px 24px;

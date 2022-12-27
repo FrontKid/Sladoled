@@ -1,17 +1,22 @@
-<div class="backdrop-location backdrop is-hidden" data-modal>
-    <div class="modal-location  modal-open">
+<div class="backdrop-location backdrop " >
+    <div class="modal-location">
         <h5 class="modal-location__title">Our Locations</h5>
-    <img class="modal-location__img" 
+    <div class="modal-location__img">
+        <img  
     srcset="
     ../assets/location/location-mobile.jpeg 224w,
-    ../assets/location/location-mobile-2x.jpeg 448w,
+    ../assets/location/location-mobile-2x.jpeg 448w, 
     ../assets/location/location-desktop.jpeg 448w,
     ../assets/location/location-desktop-2x.jpeg 896w
 "
-    src="../assets/location/location-mobile.jpeg" alt="" >   
+    src="../assets/location/location-mobile.jpeg" 
+    alt="фотографія карти" 
+    sizes="(min-width: 1200px) 448px, 
+    (min-width: 320px) 224px" 
+    />   </div>
 <button class="modal__button" type="submit">Submit</button>
-<button class="modal__close" data-modal-close>
-    <svg class="modal__svg" width="20" height="20">
+<button class="modal__close">
+    <svg class="modal-location__svg" width="20" height="20">
       <use href="../assets/sprite.svg#icon-close"></use>
     </svg>
   </button>
