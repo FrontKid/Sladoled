@@ -4,7 +4,9 @@ let currentModal = '';
 const objModal = {
   'about-card__read-more': '.modal-readmore',
   'site-button__buy': '.modal-buy-now',
-  '.product__button': '.modal',
+  'product__button': '.modal',
+  'footer-button__submit--but2': '.modal-contacts',
+  'footer-button__submit--but1': '.modal-location'
 };
 
 document.addEventListener('click', e => {
