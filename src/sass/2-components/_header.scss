@@ -55,15 +55,23 @@
 }
 
 .button__buy {
-  padding: 12px 36px;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  color: $full-black;
-  background-color: $yellow;
+  @include btn-desktop($yellow);
+
+  &:hover {
+    @include btn-desktop($button-hover);
+  }
+
+  &:focus,
+  &:focus .menu-toggle {
+    color: $white;
+    border-color: $button-hover;
+    background-color: $button-hover;
+    fill: $white;
+  }
+
+  &:disabled {
+    @include btn-desktop($button-disabled);
+  }
 }
 
 .site-button__buy {
