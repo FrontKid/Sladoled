@@ -21,8 +21,7 @@ ul {
 
 li,
 p,
-button
-{
+button {
   margin: 0;
   padding: 0;
 }
@@ -38,10 +37,10 @@ h6 {
 
 .container {
   max-width: 1168px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
-a, 
+a,
 address {
   text-decoration: none;
   font-style: normal;
@@ -55,5 +54,6 @@ img {
   height: auto;
 }
 
-
-
+button {
+  cursor: pointer;
+}

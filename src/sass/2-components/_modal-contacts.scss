@@ -1,9 +1,8 @@
- .modal-contacts {
+.modal-contacts {
   @include modal-window;
-  
-    width: 280px;
-    height: 674px;
-  }
+
+  width: 280px;
+}
 
 .modal-contacts__title {
   @extend %modal-title;
@@ -45,16 +44,16 @@
   &:hover {
     background-color: $button-hover;
     @include btn-border(2px, $button-hover);
- }
- &:focus {
+  }
+  &:focus {
     background-color: $button-hover;
     @include btn-border(2px, $button-hover);
     color: $white;
- }
- &:disabled {
+  }
+  &:disabled {
     background-color: $button-disabled;
     @include btn-border(2px, $button-disabled);
- }
+  }
 }
 
 .modal-contacts__close {
@@ -69,7 +68,6 @@
   .modal-contacts {
     @include modal-window;
     width: 568px;
-    height: 668px;
     padding: 32px 60px;
   }
 
