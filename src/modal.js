@@ -4,7 +4,7 @@ let currentModal = '';
 const objModal = {
   'about-card__read-more': '.modal-readmore',
   'site-button__buy': '.modal-buy-now',
-  '.product__button': '.modal',
+  '.product__link': '.modal',
 };
 
 document.addEventListener('click', e => {

@@ -109,11 +109,7 @@
   padding-left: 24px;
   padding-right: 24px;
 }
-@media screen and(min-width: 768px) {
-  .products__flex {
-    flex-wrap: nowrap;
-  }
-}
+
 @media screen and (min-width: 480px) {
   .products {
     background-image: url(../../assets/background-mob.jpg);
@@ -121,106 +117,87 @@
     padding-bottom: 60px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .products__card {
     max-width: 280px;
   }
-}
-@media screen and (min-width: 768px) {
   .products {
     background-image: url(../../assets/background-tablet.jpg);
   }
-}
+    .product__description {
+      max-width: 200px;
+    }
+  }
 
-@media screen and (min-width: 768px) {
+@media screen and(min-width: 768px) {
+  .products__flex {
+    flex-wrap: nowrap;
+  }
+
   .product__card {
     margin: 8px;
     flex-basis: calc((100% - 3 * 16px) / 3);
   }
-}
-@media screen and (min-width: 768px) {
+
   .product__card::before {
     top: -20%;
+  }
+  .products__title {
+    font-size: 34px;
+    line-height: 43px;
+  }
+  
+  .products__label {
+    font-size: 22px;
+    line-height: 27px;
   }
 }
 @media screen and (min-width: 1200px) {
   .products {
     background-image: url(../../assets/background.jpg);
   }
-}
-@media screen and (min-width: 1200px) {
+
   .product__card::before {
     width: 302px;
     height: 302px;
   }
-}
-@media screen and (min-width: 1200px) {
+
   .product__card {
     padding-left: 64px;
     padding-right: 64px;
     padding-top: 165px;
   }
-}
-@media screen and (min-width: 1200px) {
+
   .product__card::before {
     top: -151px;
   }
-}
 
-@media screen and (min-width: 1200px) {
   .products__title {
     margin-bottom: 302px;
   }
-}
 
-@media screen and (min-width: 1200px) {
   .product__card--ice-coffee::before,
   .product__card--ice-cream::before,
   .product__card--milkshake::before {
     background-position: 0 -16px;
   }
-}
-@media screen and(min-width: 768px) {
-  .products__title {
-    font-size: 34px;
-    line-height: 43px;
-  }
-}
-@media screen and(min-width: 768px) {
-  .products__label {
-    font-size: 22px;
-    line-height: 27px;
-  }
-}
-@media screen and(max-width:767px) {
-  .product__description {
-    max-width: 200px;
-  }
-}
-@media screen and(min-width: 1200px) {
-  .product__description {
+
+ .product__description {
     min-width: 242px;
     padding-bottom: 126px;
     font-size: 16px;
     line-height: 28px;
   }
-}
-@media screen and(min-width: 1200px) {
+
   .products__title {
     font-size: 36px;
     line-height: 45px;
     letter-spacing: 0.06em;
   }
-}
-@media screen and(min-width: 1200px) {
+
   .products__label,
   .product__title {
     font-size: 30px;
     line-height: 37px;
   }
-}
-@media screen and (min-width: 1200px) {
-  .product__link {
-    bottom: 67px;
-  }
-}
+ }
