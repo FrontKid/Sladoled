@@ -45,9 +45,12 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 8px;
     cursor: pointer;
-
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
       border: 2px solid $button-hover;
+    }
+    &:focus {
+      color: $white;
     }
   }
 
@@ -57,14 +60,13 @@
     font-size: 12px;
     line-height: 1.2;
     cursor: pointer;
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
       color: $button-hover;
     }
     &:focus {
       color: $white;
     }
-
     &:disabled {
       color: $button-disabled;
     }
@@ -109,6 +111,11 @@
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+  }
+
+  &__iceCreamPlate-wrapper {
+    position: relative;
   }
 
   &__image-iceCreamPlate {
@@ -144,13 +151,11 @@
   }
 
   &__dots-wrapper {
-    position: relative;
-  }
-
-  &__dots-mobile {
+    width: 320px;
     position: absolute;
-    bottom: -217px;
-    left: -65px;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
   }
 
   &__dots-tablet {
@@ -231,7 +236,76 @@
     }
 
     &__dots-wrapper {
+      width: 768px;
+    }
+
+    &__dots-mobile {
+      display: none;
+    }
+
+    &__link-group {
+      margin-bottom: 39px;
+    }
+
+    &__advantages {
+      display: block;
+    }
+
+    &__image-wrapper {
+      align-items: flex-end;
+    }
+
+    &__iceCreamPlate-wrapper {
       position: relative;
+      width: 152px;
+      height: 100px;
+
+      margin-right: 32px;
+    }
+
+    &__image-iceCreamPlate {
+      display: inline-block;
+      position: absolute;
+      bottom: 10px;
+      left: 0px;
+      width: 100%;
+    }
+
+    &__text-wrapper {
+      display: inline-block;
+      margin-right: 53px;
+      margin-bottom: 24px;
+    }
+
+    &__text {
+      margin: 0;
+      margin-bottom: 12px;
+      width: 139px;
+      height: 85px;
+
+      color: $white;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    &__arrow {
+      display: block;
+    }
+
+    &__iceCream-wrapper {
+      width: 268px;
+      height: 100px;
+    }
+
+    &__image-iceCream {
+      right: 30px;
+
+      width: 268px;
+      height: 329px;
+    }
+
+    &__dots-wrapper {
+      width: 768px;
     }
 
     &__dots-mobile {
@@ -243,8 +317,8 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .hero__dots-tablet {
     position: absolute;
-    bottom: -100px;
-    left: -64px;
+    bottom: 0px;
+    left: 0px;
 
     display: flex;
     justify-content: center;
@@ -259,6 +333,93 @@
 
       font-size: 38px;
       line-height: 1.2;
+    }
+
+    &__link-group {
+      margin-bottom: 109px;
+    }
+
+    &__link-products {
+      padding: 12px 34px;
+      font-size: 14px;
+
+      &:focus {
+        border: 2px solid $button-hover;
+        color: $white;
+      }
+
+      &:disabled {
+        border: 2px solid $button-disabled;
+      }
+    }
+
+    &__link-about {
+      font-size: 14px;
+    }
+
+    &__advantages-text {
+      margin-top: 8px;
+      margin-bottom: 16px;
+      width: 79px;
+      font-size: 46px;
+      line-height: 1.2;
+    }
+
+    &__advantages-span {
+      font-size: 14px;
+    }
+
+    &__image-wrapper {
+      justify-content: left;
+    }
+
+    &__iceCreamPlate-wrapper {
+      width: 225px;
+      height: 100px;
+
+      margin-right: 16px;
+    }
+
+    &__image-iceCreamPlate {
+      bottom: 50px;
+      left: 0px;
+      width: 100%;
+    }
+
+    &__text-wrapper {
+      margin-right: 195px;
+      margin-bottom: 103px;
+    }
+
+    &__text {
+      margin-bottom: 24px;
+      font-size: 14px;
+      width: 200px;
+      height: 80px;
+    }
+
+    &__dots-wrapper {
+      width: 1200px;
+      position: absolute;
+    }
+
+    &__iceCream-wrapper {
+      width: 456px;
+      height: 100px;
+    }
+
+    &__image-iceCream {
+      right: 10px;
+
+      width: 456px;
+      height: 560px;
+    }
+
+    &__dots-desktop {
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      left: -16px;
     }
 
     &__link-group {
@@ -339,7 +500,7 @@
     &__dots-desktop {
       display: block;
       position: absolute;
-      bottom: -100px;
+      bottom: 0;
       left: -16px;
     }
   }
