@@ -1,10 +1,17 @@
 .modal-buy-now {
+   display: block;
    position: relative;
+   position: absolute;
+   top: 60%;
+   left: 50%;
    max-width: 568px;
    padding: 28px;
    text-align: center;
 
-   background-color: antiquewhite;
+   background-color: $white;
+   border-radius: 10px;
+   transform: translate(-50%, -50%) scale(100%);
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buy-now__button-close {
