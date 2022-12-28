@@ -113,6 +113,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     }
 
      &__iceCreamPlate-wrapper {
@@ -154,13 +155,9 @@
     &__dots-wrapper {
     width: 320px;
     position: absolute;
+    display: flex;
+    justify-content: center;
     pointer-events: none;
-    }
-
-    &__dots-mobile {
-    position: absolute;
-    bottom: -217px;
-    left: -65px;
     }
 
     &__dots-tablet {
@@ -243,7 +240,6 @@
 
         &__dots-wrapper {
         width: 768px;
-        position: absolute;
         }
 
         &__dots-mobile {
@@ -255,8 +251,8 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     .hero__dots-tablet {
         position: absolute;
-        bottom: -100px;
-        left: -64px;
+        bottom: 0px;
+        left: 0px;
         
         display: flex;
         justify-content: center;
@@ -339,6 +335,11 @@
             height: 80px;
         }
 
+        &__dots-wrapper {
+            width: 1200px;
+            position: absolute;
+        }
+
         &__iceCream-wrapper {
             width: 456px;
             height: 100px;
@@ -353,9 +354,8 @@
 
         &__dots-desktop {
             display: block;
-            width: 1200px;
             position: absolute;
-            bottom: -100px;
+            bottom: 0px;
             left: -16px;
         }
     }
