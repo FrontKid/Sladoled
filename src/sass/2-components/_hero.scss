@@ -115,6 +115,10 @@
     justify-content: center;
     }
 
+     &__iceCreamPlate-wrapper {
+        position: relative;
+        }
+
     &__image-iceCreamPlate {
     display: none;
     }
@@ -148,7 +152,8 @@
     }
 
     &__dots-wrapper {
-    position: relative;
+    width: 320px;
+    position: absolute;
     pointer-events: none;
     }
 
@@ -237,7 +242,8 @@
         }
 
         &__dots-wrapper {
-        position: relative;
+        width: 768px;
+        position: absolute;
         }
 
         &__dots-mobile {
@@ -347,6 +353,7 @@
 
         &__dots-desktop {
             display: block;
+            width: 1200px;
             position: absolute;
             bottom: -100px;
             left: -16px;
