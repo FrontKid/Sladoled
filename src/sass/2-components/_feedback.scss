@@ -1,10 +1,6 @@
 .feedback {
   padding-top: 0;
   padding-bottom: 393px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-width: 1013px;
-  margin: auto;
 }
 
 .feedback__container {
@@ -31,7 +27,7 @@
   flex-direction: column;
   align-items: center;
 
-  margin-top: 58px;
+  margin-top: 48px;
 }
 
 .feedback__avatar {
@@ -93,13 +89,18 @@
   }
 
   .feedback__image-block {
-    max-width: 900px;
-    transform: translate(0, -32px);
+  top: -144px;
+  max-width: 900px;
   }
 
   .feedback__img {
+    transform: translate(0, -144px);
     border-radius: 18px;
   }
+
+  .feedback__item {
+   margin-top: -44px;
+ }
 
   .feedback__avatar {
     width: 84px;
@@ -132,13 +133,18 @@
   }
 
   .feedback__image-block {
-    max-width: 1013px;
+   top: -98px;
+   max-width: 1013px;
   }
 
   .feedback__img {
-    transform: translate(0, -32px);
+    transform: translate(0, -98px);
     border-radius: 24px;
   }
+
+  .feedback__item {
+   margin-top: 42px;
+ }
 
   .feedback__avatar {
     width: 85px;
