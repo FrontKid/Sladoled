@@ -24,7 +24,22 @@
     margin: 0;
   }
 }
-
+.about-card__read-more {
+  transition: all 0.4s $timing-function 0s;
+}
+.about-card__read-more:focus {
+  color: $white;
+}
+.buy-arrow-in-butto {
+  transition: all 0.4s $timing-function 0s;
+}
+.about-card__read-more:focus .buy-arrow-in-button {
+  transition: all 0.4s $timing-function 0s;
+  fill: $white;
+}
+.about-card__read-more:hover {
+  background-color: $button-hover;
+}
 .modal-readmore__close {
   display: block;
   font-size: 26px;

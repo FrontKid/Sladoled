@@ -3,7 +3,7 @@
   const objModal = {
     'about-card__read-more': '.modal-readmore',
     'site-button__buy': '.modal-buy-now',
-    'product__button:': '.modal',
+    'product__link': '.modal',
     'mobile-button__buy': '.modal-buy-now',
     'footer-button__submit--but1': '.modal-location',
     'footer-button__submit--but2': '.modal-contacts',
@@ -18,8 +18,11 @@
 
   refs.openModalBtn.forEach(btn => {
     btn.addEventListener('click', e => {
+
       openModalClassName = e.target.classList[0];
+
       if (objModal[openModalClassName]) {
+
         toggleModal();
       }
     });
