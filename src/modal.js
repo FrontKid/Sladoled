@@ -1,29 +1,45 @@
-const modalBackdrop = document.querySelector('.is-hidden');
-let currentModal = '';
+(() => {
+  let openModalClassName = '';
+  const objModal = {
+    'about-card__read-more': '.modal-readmore',
+    'site-button__buy': '.modal-buy-now',
+    'product__button:': '.modal',
+    'mobile-button__buy': '.modal-buy-now',
+    'footer-button__submit--but1': '.modal-location',
+    'footer-button__submit--but2': '.modal-contacts',
+  };
 
-const objModal = {
-  'about-card__read-more': '.modal-readmore',
-  'site-button__buy': '.modal-buy-now',
-  'product__button': '.modal',
-  'footer-button__submit--but2': '.modal-contacts',
-  'footer-button__submit--but1': '.modal-location'
-};
+  const refs = {
+    openModalBtn: document.querySelectorAll('[data-open-modal]'),
+    closeModalBtn: document.querySelectorAll('[data-modal-close]'),
+    backdrop: document.querySelector('.backdrop'),
+    modal: document.querySelectorAll('[data-modal-window]'),
+  };
 
-document.addEventListener('click', e => {
+  refs.openModalBtn.forEach(btn => {
+    btn.addEventListener('click', e => {
+      openModalClassName = e.target.classList[0];
+      if (objModal[openModalClassName]) {
+        toggleModal();
+      }
+    });
+  });
 
-  if (e.target.matches('[data-open-modal]')) {
-    currentModal = e.target.classList.value.split(' ')[0];
-    console.log(currentModal)
-    document.querySelector(`${objModal[currentModal]}`).style.display = 'block';
-    modalBackdrop.classList.remove('is-hidden');
+  refs.closeModalBtn.forEach(btn => {
+    btn.addEventListener('click', toggleModal);
+  });
+
+  refs.backdrop.addEventListener('click', toggleModal);
+
+  refs.modal.forEach(btn => {
+    btn.addEventListener('click', e => e.stopPropagation());
+  });
+
+  function toggleModal() {
+    document
+      .querySelector(`${objModal[openModalClassName]}`)
+      .classList.toggle('modal-hidden');
+
+    refs.backdrop.classList.toggle('is-hidden');
   }
-
-
-  if (
-    e.target.matches('.backdrop') ||
-    e.target.classList.value.includes('close')
-  ) {
-    modalBackdrop.classList.add('is-hidden');
-    document.querySelector(`${objModal[currentModal]}`).style.display = 'none';
-  }
-});
+})();
