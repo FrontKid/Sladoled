@@ -3,7 +3,10 @@
 * {
   box-sizing: border-box;
 }
-
+*,
+html {
+  scroll-behavior: smooth !important;
+}
 body {
   font-size: $general-font-size;
   font-family: $font-family-mont;
